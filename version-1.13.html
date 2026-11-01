@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="description" content="What Voltix stores on your device, why it is used, and which services receive information when you use the app.">
+  <meta name="voltio-policy-version" content="1.13">
   <title>Privacy policy · Voltix</title>
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/javisdk/privacy/7e047ad51db7678feebda0a0014ef018ed44a969/voltix-symbol.png">
   <style>
@@ -136,6 +137,15 @@ footer .shell { display:flex; justify-content:space-between; flex-wrap:wrap; gap
 
 .archive-notice { margin:16px 0 0; padding:12px 16px; border:1px solid var(--line); border-radius:8px; color:var(--muted); font-size:.8rem; line-height:1.55; }
 .archive-notice a { white-space:nowrap; }
+.policy-history { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px 20px; margin-top:18px; padding:14px 18px; border:1px solid var(--line); border-radius:8px; color:var(--muted); font-size:.8rem; line-height:1.5; }
+.policy-history p { margin:0; }
+.policy-history strong { color:var(--ink); }
+.policy-version-browser { display:flex; flex-wrap:wrap; gap:8px; }
+.policy-version-link { display:inline-flex; align-items:center; gap:6px; min-height:38px; padding:6px 10px; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:.72rem; line-height:1.3; text-decoration:none; }
+.policy-version-link:hover,.policy-version-link[aria-current=page] { border-color:var(--accent); color:var(--ink); background:var(--surface); }
+.policy-version-link small { color:var(--muted); font-size:.62rem; }
+
+@media(max-width:480px) { .policy-history { display:block; } .policy-version-browser { margin-top:10px; } }
 </style>
 </head>
 <body>
@@ -168,7 +178,16 @@ footer .shell { display:flex; justify-content:space-between; flex-wrap:wrap; gap
         <h1 id="title-en"><span class="title-line">Privacy</span><span class="title-line title-last">policy</span></h1>
         <p class="hero-copy">This page explains what Voltix uses information for, what stays on your device, and what is shared with other services when you use the app.</p>
         <div class="meta"><span>Voltix · developed by javisdk</span><span>Last updated: 9 October 2026</span></div>
-        <p class="archive-notice"><strong>Archived policy · app version 1.13.</strong> Historical snapshot dated 9 October 2026. <a href="index.html">View current policy</a>.</p>
+      <!-- POLICY_VERSION_NAV_EN_START -->
+<nav class="policy-history" aria-label="Policy versions">
+  <p><strong>Archived policy · app version 1.13. Current: 1.20.</strong></p>
+  <div class="policy-version-browser">
+    <a class="policy-version-link" href="index.html" aria-label="1.20 · Current version"><span>1.20</span><small>Current version</small></a>
+    <a class="policy-version-link" href="version-1.15.3.html" aria-label="1.15.3 · Archived policy"><span>1.15.3</span><small>Archived policy</small></a>
+    <a class="policy-version-link" href="version-1.13.html" aria-current="page" aria-label="1.13 · Archived policy"><span>1.13</span><small>Archived policy</small></a>
+  </div>
+</nav>
+<!-- POLICY_VERSION_NAV_EN_END -->
       </header>
       
       <div class="policy-layout">
@@ -287,7 +306,16 @@ footer .shell { display:flex; justify-content:space-between; flex-wrap:wrap; gap
         <h1 id="title-es"><span class="title-line">Política de</span><span class="title-line title-last">privacidad</span></h1>
         <p class="hero-copy">Aquí explicamos para qué usa Voltix la información, qué permanece en tu dispositivo y qué se comparte con otros servicios al utilizar la app.</p>
         <div class="meta"><span>Voltix · desarrollada por javisdk</span><span>Última revisión: 9 de octubre de 2026</span></div>
-        <p class="archive-notice"><strong>Política archivada · versión 1.13 de la app.</strong> Versión histórica del 9 de octubre de 2026. <a href="index.html">Ver la política actual</a>.</p>
+      <!-- POLICY_VERSION_NAV_ES_START -->
+<nav class="policy-history" aria-label="Versiones de la política">
+  <p><strong>Política archivada · versión 1.13. Actual: 1.20.</strong></p>
+  <div class="policy-version-browser">
+    <a class="policy-version-link" href="index.html" aria-label="1.20 · Versión actual"><span>1.20</span><small>Versión actual</small></a>
+    <a class="policy-version-link" href="version-1.15.3.html" aria-label="1.15.3 · Política archivada"><span>1.15.3</span><small>Política archivada</small></a>
+    <a class="policy-version-link" href="version-1.13.html" aria-current="page" aria-label="1.13 · Política archivada"><span>1.13</span><small>Política archivada</small></a>
+  </div>
+</nav>
+<!-- POLICY_VERSION_NAV_ES_END -->
       </header>
       
       <div class="policy-layout">

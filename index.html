@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="description" content="What Voltio stores on your device, why it is used, and which services receive information when you use the app.">
+  <meta name="voltio-policy-version" content="1.20">
   <title>Privacy policy · Voltio</title>
   <link rel="icon" type="image/png" href="voltio-symbol.png">
   <style>
@@ -48,9 +49,6 @@ h1 .title-last { color:var(--muted); }
 h1 .title-last::after { content:"."; color:var(--accent-bright); }
 .hero-copy { max-width:610px; margin:0; color:var(--muted); font-size:1.05rem; line-height:1.8; animation:enter .28s .05s both; }
 .meta { display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px 24px; margin-top:40px; color:var(--muted); font-size:.7rem; letter-spacing:.02em; animation:enter .28s .07s both; }
-.policy-history { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px 24px; margin-top:18px; padding:14px 18px; border:1px solid var(--line); border-radius:8px; color:var(--muted); font-size:.8rem; line-height:1.5; }
-.policy-history p { margin:0; }
-.policy-history strong { color:var(--ink); }
 .policy-layout { display:grid; grid-template-columns:minmax(0,700px) 240px; column-gap:100px; align-items:start; }
 .policy-body { grid-column:1; grid-row:1; min-width:0; counter-reset:section; }
 .contents { grid-column:2; grid-row:1; position:sticky; top:118px; }
@@ -137,6 +135,15 @@ footer .shell { display:flex; justify-content:space-between; flex-wrap:wrap; gap
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation:none!important; transition:none!important; } }
 @media print { :root { --page:white; --ink:black; --muted:#333; --line:#ccc; --accent:#333; --surface:white; } .topbar,.contents,.skip-link,.back-top { display:none; } .shell { width:100%; } .hero { padding:0 0 20px; margin-bottom:20px; } h1 { font-size:3rem; } .policy-layout { display:block; } .policy-section { padding:20px 0; } .section-title { break-after:avoid; } }
 
+.policy-history { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px 20px; margin-top:18px; padding:14px 18px; border:1px solid var(--line); border-radius:8px; color:var(--muted); font-size:.8rem; line-height:1.5; }
+.policy-history p { margin:0; }
+.policy-history strong { color:var(--ink); }
+.policy-version-browser { display:flex; flex-wrap:wrap; gap:8px; }
+.policy-version-link { display:inline-flex; align-items:center; gap:6px; min-height:38px; padding:6px 10px; border:1px solid var(--line); border-radius:999px; color:var(--muted); font-size:.72rem; line-height:1.3; text-decoration:none; }
+.policy-version-link:hover,.policy-version-link[aria-current=page] { border-color:var(--accent); color:var(--ink); background:var(--surface); }
+.policy-version-link small { color:var(--muted); font-size:.62rem; }
+
+@media(max-width:480px) { .policy-history { display:block; } .policy-version-browser { margin-top:10px; } }
 </style>
 </head>
 <body>
@@ -168,8 +175,17 @@ footer .shell { display:flex; justify-content:space-between; flex-wrap:wrap; gap
         <div class="eyebrow">Voltio · Privacy</div>
         <h1 id="title-en"><span class="title-line">Privacy</span><span class="title-line title-last">policy</span></h1>
         <p class="hero-copy">This page explains what Voltio uses information for, what stays on your device, and what is shared with other services when you use the app.</p>
-        <div class="meta"><span>Voltio · developed by javisdk</span><span>Last updated: 28 October 2026</span></div>
-        <div class="policy-history"><p><strong>Current policy · app version 1.15.3</strong></p><a href="version-1.13.html">View the version 1.13 policy</a></div>
+        <div class="meta"><span>Voltio · developed by javisdk</span><span>Last updated: 1 November 2026</span><span>Applies to Voltio 1.20</span></div>
+      <!-- POLICY_VERSION_NAV_EN_START -->
+<nav class="policy-history" aria-label="Policy versions">
+  <p><strong>Current policy · app version 1.20</strong></p>
+  <div class="policy-version-browser">
+    <a class="policy-version-link" href="index.html" aria-current="page" aria-label="1.20 · Current version"><span>1.20</span><small>Current version</small></a>
+    <a class="policy-version-link" href="version-1.15.3.html" aria-label="1.15.3 · Archived policy"><span>1.15.3</span><small>Archived policy</small></a>
+    <a class="policy-version-link" href="version-1.13.html" aria-label="1.13 · Archived policy"><span>1.13</span><small>Archived policy</small></a>
+  </div>
+</nav>
+<!-- POLICY_VERSION_NAV_EN_END -->
       </header>
       
       <div class="policy-layout">
@@ -291,8 +307,17 @@ footer .shell { display:flex; justify-content:space-between; flex-wrap:wrap; gap
         <div class="eyebrow">Voltio · Privacidad</div>
         <h1 id="title-es"><span class="title-line">Política de</span><span class="title-line title-last">privacidad</span></h1>
         <p class="hero-copy">Aquí explicamos para qué usa Voltio la información, qué permanece en tu dispositivo y qué se comparte con otros servicios al utilizar la app.</p>
-        <div class="meta"><span>Voltio · desarrollada por javisdk</span><span>Última revisión: 28 de octubre de 2026</span></div>
-        <div class="policy-history"><p><strong>Política actual · versión de la app 1.15.3</strong></p><a href="version-1.13.html">Ver la política de la versión 1.13</a></div>
+        <div class="meta"><span>Voltio · desarrollada por javisdk</span><span>Última revisión: 1 de noviembre de 2026</span><span>Aplica a Voltio 1.20</span></div>
+      <!-- POLICY_VERSION_NAV_ES_START -->
+<nav class="policy-history" aria-label="Versiones de la política">
+  <p><strong>Política actual · versión de la app 1.20</strong></p>
+  <div class="policy-version-browser">
+    <a class="policy-version-link" href="index.html" aria-current="page" aria-label="1.20 · Versión actual"><span>1.20</span><small>Versión actual</small></a>
+    <a class="policy-version-link" href="version-1.15.3.html" aria-label="1.15.3 · Política archivada"><span>1.15.3</span><small>Política archivada</small></a>
+    <a class="policy-version-link" href="version-1.13.html" aria-label="1.13 · Política archivada"><span>1.13</span><small>Política archivada</small></a>
+  </div>
+</nav>
+<!-- POLICY_VERSION_NAV_ES_END -->
       </header>
       
       <div class="policy-layout">

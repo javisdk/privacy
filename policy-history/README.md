@@ -1,20 +1,23 @@
 # Historial de la política de privacidad
 
-El sitio conserva la política vigente en `../index.html` y una página HTML completa por cada versión archivada. Cada archivo Markdown de esta carpeta registra la fecha, el alcance del cambio y el snapshot que puede consultar el usuario.
+La política vigente está en [`../index.html`](../index.html). Cada versión anterior tiene una página HTML completa, enlazada desde el navegador de versiones que aparece en inglés y español.
 
-| Versión de la app | Snapshot | Política |
-| --- | --- | --- |
-| 1.15.3 (vigente) | 28 de octubre de 2026 | [Política actual](../index.html) · [Registro](1.15.3.md) |
-| 1.13 | 9 de octubre de 2026 | [Política archivada](../version-1.13.html) · [Registro](1.13.md) |
+<!-- POLICY_HISTORY_TABLE_START -->
+| Versión de la app | Estado | Revisión | Política |
+| --- | --- | --- | --- |
+| 1.20 | Vigente | 1 de noviembre de 2026 | [Política actual](../index.html) |
+| 1.15.3 | Archivada | 28 de octubre de 2026 | [Política archivada](../version-1.15.3.html) |
+| 1.13 | Archivada | 9 de octubre de 2026 | [Política archivada](../version-1.13.html) |
+<!-- POLICY_HISTORY_TABLE_END -->
 
-## Cuándo actualizar la política
+## Actualizaciones para futuras versiones
 
-Antes de publicar una versión de Voltio, compara los cambios de la app con lo que explica la política. Revisa especialmente:
+Antes de publicar una nueva versión de Voltio en producción:
 
-- Datos guardados en el dispositivo, caché y plazos de conservación.
-- Permisos, ubicación, selección de mercado, mapas y búsqueda de lugares.
-- Proveedores de electricidad, cambio de divisas y otros servicios de red.
-- Analítica, eventos, identificadores, anuncios, mediación y consentimiento.
-- Compras, pagos, verificación y restauración de compras.
+1. Revisa y actualiza en inglés y español las secciones que hayan cambiado en `index.html`.
+2. Actualiza el valor de `<meta name="voltio-policy-version">`, las fechas de revisión y la versión indicada en el encabezado.
+3. Publica ese cambio en `main` como parte del procedimiento de release.
 
-Si un cambio afecta a la información tratada, a quién se envía, a su conservación o a las opciones del usuario, actualiza las secciones correspondientes en inglés y español de `../index.html`. Añade una entrada Markdown para la versión, guarda la política anterior como `../version-<versión>.html`, enlázala desde las dos versiones lingüísticas y actualiza esta tabla. Mantén el contenido archivado como una instantánea de lo que se publicó entonces.
+La acción de GitHub compara la versión con el commit anterior. Cuando detecta un cambio, guarda una copia HTML íntegra de la política anterior, conserva las instantáneas existentes, actualiza la navegación de versiones de la página actual y de los archivos históricos, y reconstruye esta tabla. Las modificaciones de texto sin cambio de versión no crean una instantánea.
+
+Google Play no emite un evento de release a este repositorio. Por eso, el cambio de la política y su versión debe entrar en `main` al preparar la release de Play; después, el archivado y la navegación se generan automáticamente en GitHub.

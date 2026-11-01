@@ -1,0 +1,36 @@
+name: Archive previous privacy policy version
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - index.html
+
+permissions:
+  contents: write
+
+jobs:
+  archive-previous-version:
+    if: ${{ !contains(github.event.head_commit.message, '[privacy-archive]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out policy history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Snapshot the previous policy when the app version changes
+        run: python3 scripts/archive_policy_version.py --previous-ref "${{ github.event.before }}"
+
+      - name: Publish generated snapshots
+        run: |
+          if git diff --quiet; then
+            echo "No version change to archive."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- index.html version-*.html policy-history/README.md
+          git commit -m "[privacy-archive] Snapshot prior app policy"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
