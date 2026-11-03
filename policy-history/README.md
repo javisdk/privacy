@@ -5,7 +5,8 @@ La política vigente está en [`../index.html`](../index.html). Cada versión an
 <!-- POLICY_HISTORY_TABLE_START -->
 | Versión de la app | Estado | Revisión | Política |
 | --- | --- | --- | --- |
-| 1.21 | Vigente | 1 de noviembre de 2026 | [Política actual](../index.html) |
+| 1.22 | Vigente | 3 de noviembre de 2026 | [Política actual](../index.html) |
+| 1.21 | Archivada | 1 de noviembre de 2026 | [Política archivada](../version-1.21.html) |
 | 1.20 | Archivada | 1 de noviembre de 2026 | [Política archivada](../version-1.20.html) |
 | 1.15.3 | Archivada | 28 de octubre de 2026 | [Política archivada](../version-1.15.3.html) |
 | 1.13 | Archivada | 9 de octubre de 2026 | [Política archivada](../version-1.13.html) |
